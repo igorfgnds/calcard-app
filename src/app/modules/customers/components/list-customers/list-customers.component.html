@@ -1,0 +1,51 @@
+<section class="bg-primary py-5">
+  <div class="container">
+    <form class="search-customer-form mx-auto pb-5">
+      <div class="row">
+        <div class="col-sm-8 col-md-9 mb-3 mb-sm-0">
+          <input class="form-control" type="search" placeholder="Filtrar clientes pelo nome" name="filterTerm" [(ngModel)]="filterTerm">
+        </div>
+        <div class="col-sm-4 col-md-3">
+          <button type="button" class="btn btn-secondary w-100" [routerLink]="['../cadastrar']">Novo cliente</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<section class="wrapper">
+  <div class="container">
+    <div class="table-responsive px-1 py-5">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Sexo</th>
+            <th>Estado Civil</th>
+            <th>Estado</th>
+            <th>Dependentes</th>
+            <th>Renda</th>
+            <th>Resultado</th>
+            <th>Limite</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let c of customers | filter : 'nome' : filterTerm">
+            <td>{{c.nome}}</td>
+            <td>{{c.idade}}</td>
+            <td>{{c.sexo}}</td>
+            <td>{{c.estadoCivil}}</td>
+            <td>{{c.estado}}</td>
+            <td>{{c.dependentes}}</td>
+            <td>{{c.renda}}</td>
+            <td>
+              <span class="{{c.resultado == 'Aprovado' ? 'result-approved' : 'result-negative'}}"></span>
+              {{c.resultado}}
+            </td>
+            <td>{{c.limite}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

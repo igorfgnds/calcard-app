@@ -1,0 +1,22 @@
+/*
+ * Calcard
+ *
+ * Developed with ♥ by @igorfgnds
+ */
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700;900&display=swap');
+
+// Custom variables
+@import "assets/scss/variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Custom styles
+@import "assets/scss/global";
+@import "assets/scss/buttons";
+@import "assets/scss/forms";
+@import "assets/scss/tables";
+@import "assets/scss/navbar";
+@import "assets/scss/footer";

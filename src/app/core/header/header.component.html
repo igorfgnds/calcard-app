@@ -1,0 +1,16 @@
+<header class="header">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand {{isLoginRoute() ? 'mx-auto' : 'mr-auto'}}" [routerLink]="['clientes/listar']">
+        CALCARD
+        <span class="d-none d-sm-inline">/ análise de crédito</span>
+      </a>
+      <a *ngIf="!isLoginRoute()" class="user-profile" [routerLink]="['/']">
+        <div class="user-profile-name d-inline-block align-middle mr-2">
+          Admin
+        </div>
+        <div class="user-profile-circle d-inline-block align-middle"></div>
+      </a>
+    </div>
+  </nav>
+</header>

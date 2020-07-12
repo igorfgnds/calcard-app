@@ -1,0 +1,54 @@
+<section class="bg-primary py-5">
+  <div class="container">
+    <h1 class="text-center text-white pb-5">{{ addCustomerSuccess ? 'Resultado' : 'Novo cliente' }}</h1>
+  </div>
+</section>
+<section class="wrapper">
+  <div class="container">
+    <form *ngIf="!addCustomerSuccess" class="add-customer-form mx-auto py-5" (ngSubmit)="onSubmit()" #addCustomerForm="ngForm">
+      <div class="mb-4">
+        <input type="text" class="form-control" name="nome" placeholder="Nome" [(ngModel)]="customer.nome" required>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 mb-4">
+          <input type="number" class="form-control" name="idade" placeholder="Idade" [(ngModel)]="customer.idade" required>
+        </div>
+        <div class="col-sm-6 mb-4">
+          <select class="form-control" name="sexo" [(ngModel)]="customer.sexo" required>
+            <option *ngFor="let g of genres" [ngValue]="g.value" [disabled]="g.disabled">{{g.label}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 mb-4">
+          <select class="form-control" name="estadoCivil" [(ngModel)]="customer.estadoCivil" required>
+            <option *ngFor="let ms of maritalStatus" [ngValue]="ms.value" [disabled]="ms.disabled">{{ms.label}}</option>
+          </select>
+        </div>
+        <div class="col-sm-6 mb-4">
+          <select class="form-control" name="estado" [(ngModel)]="customer.estado" required>
+            <option *ngFor="let s of states" [ngValue]="s.value" [disabled]="s.disabled">{{s.label}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 mb-4">
+          <input type="number" class="form-control" name="dependentes" placeholder="Dependentes" [(ngModel)]="customer.dependentes" required>
+        </div>
+        <div class="col-sm-6 mb-4">
+          <input currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',', align: 'left' }" class="form-control" name="renda" placeholder="Renda" [(ngModel)]="customer.renda" required>
+        </div>
+      </div>
+      <div class="text-center text-sm-right">
+        <button type="button" class="btn btn-light mr-3" [routerLink]="['../listar']">Cancelar</button>
+        <button type="submit" class="btn btn-secondary" [disabled]="!addCustomerForm.form.valid">Cadastrar</button>
+      </div>
+    </form>
+    <div *ngIf="addCustomerSuccess" class="text-center py-5">
+      <div class="add-customer-success d-inline-block"></div>
+      <h2>Crédito {{customer.resultado}}</h2>
+      <p class="mb-5">Limite {{customer.limite}}</p>
+      <button type="button" class="btn btn-light" [routerLink]="['../listar']">Voltar para o início</button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,329 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "nome": "Lucas",
+      "idade": 28,
+      "sexo": "M",
+      "estadoCivil": "solteiro(a)",
+      "estado": "SC",
+      "dependentes": 0,
+      "renda": 2500,
+      "resultado": "Aprovado",
+      "limite": "entre 500 - 1000"
+    },
+    {
+      "id": 2,
+      "nome": "Ana",
+      "idade": 17,
+      "sexo": "F",
+      "estadoCivil": "solteiro(a)",
+      "estado": "SP",
+      "dependentes": 0,
+      "renda": 1000,
+      "resultado": "Aprovado",
+      "limite": "entre 100 - 500"
+    },
+    {
+      "id": 3,
+      "nome": "Pedro",
+      "idade": 68,
+      "sexo": "M",
+      "estadoCivil": "casado(a)",
+      "estado": "SC",
+      "dependentes": 3,
+      "renda": 8000,
+      "resultado": "Aprovado",
+      "limite": "entre 1500 - 2000"
+    },
+    {
+      "id": 4,
+      "nome": "Paula",
+      "idade": 61,
+      "sexo": "F",
+      "estadoCivil": "casado(a)",
+      "estado": "RJ",
+      "dependentes": 3,
+      "renda": 5000,
+      "resultado": "Aprovado",
+      "limite": "entre 1000 - 1500"
+    },
+    {
+      "id": 5,
+      "nome": "João",
+      "idade": 56,
+      "sexo": "M",
+      "estadoCivil": "divorciado(a)",
+      "estado": "RJ",
+      "dependentes": 2,
+      "renda": 2000,
+      "resultado": "Negado",
+      "limite": "reprovado pela política de crédito"
+    },
+    {
+      "id": 6,
+      "nome": "Maria",
+      "idade": 45,
+      "sexo": "F",
+      "estadoCivil": "divorciado(a)",
+      "estado": "SP",
+      "dependentes": 1,
+      "renda": 2000,
+      "resultado": "Negado",
+      "limite": "reprovado pela política de crédito"
+    },
+    {
+      "id": 7,
+      "nome": "José",
+      "idade": 30,
+      "sexo": "M",
+      "estadoCivil": "casado(a)",
+      "estado": "MA",
+      "dependentes": 2,
+      "renda": 8000,
+      "resultado": "Aprovado",
+      "limite": "superior 2000"
+    },
+    {
+      "id": 8,
+      "nome": "Dinae",
+      "idade": 33,
+      "sexo": "F",
+      "estadoCivil": "casado(a)",
+      "estado": "SP",
+      "dependentes": 1,
+      "renda": 10000,
+      "resultado": "Aprovado",
+      "limite": "superior 2000"
+    },
+    {
+      "id": 9,
+      "nome": "Marcos",
+      "idade": 19,
+      "sexo": "M",
+      "estadoCivil": "solteiro(a)",
+      "estado": "SC",
+      "dependentes": 1,
+      "renda": 400,
+      "resultado": "Negado",
+      "limite": "renda baixa"
+    },
+    {
+      "id": 10,
+      "nome": "Suzan",
+      "idade": 63,
+      "sexo": "F",
+      "estadoCivil": "viúvo(a)",
+      "estado": "MA",
+      "dependentes": 3,
+      "renda": 1500,
+      "resultado": "Negado",
+      "limite": "reprovado pela política de crédito"
+    },
+    {
+      "id": 11,
+      "nome": "Luci",
+      "idade": 28,
+      "sexo": "F",
+      "estadoCivil": "solteiro(a)",
+      "estado": "SC",
+      "dependentes": 2,
+      "renda": 2500,
+      "resultado": "Aprovado",
+      "limite": "entre 100 - 500"
+    },
+    {
+      "id": 12,
+      "nome": "Roberto",
+      "idade": 16,
+      "sexo": "M",
+      "estadoCivil": "solteiro(a)",
+      "estado": "SP",
+      "dependentes": 0,
+      "renda": 500,
+      "resultado": "Negado",
+      "limite": "renda baixa"
+    },
+    {
+      "id": 13,
+      "nome": "Bruno",
+      "idade": 30,
+      "sexo": "M",
+      "estadoCivil": "casado(a)",
+      "estado": "MA",
+      "dependentes": 5,
+      "renda": 8000,
+      "resultado": "Aprovado",
+      "limite": "entre 1000 - 1500"
+    },
+    {
+      "id": 14,
+      "nome": "Ariel",
+      "idade": 33,
+      "sexo": "F",
+      "estadoCivil": "viúvo(a)",
+      "estado": "SP",
+      "dependentes": 0,
+      "renda": 10000,
+      "resultado": "Aprovado",
+      "limite": "superior 2000"
+    }
+  ],
+  "genres": [
+    {
+      "label": "Sexo",
+      "value": "",
+      "disabled": true
+    },
+    {
+      "label": "Feminino",
+      "value": "F"
+    },
+    {
+      "label": "Masculino",
+      "value": "M"
+    }
+  ],
+  "maritalStatus": [
+    {
+      "label": "Estado Civil",
+      "value": "",
+      "disabled": true
+    },
+    {
+      "label": "solteiro(a)",
+      "value": "solteiro(a)"
+    },
+    {
+      "label": "casado(a)",
+      "value": "casado(a)"
+    },
+    {
+      "label": "separado(a)",
+      "value": "separado(a)"
+    },
+    {
+      "label": "divorciado(a)",
+      "value": "divorciado(a)"
+    },
+    {
+      "label": "viúvo(a)",
+      "value": "viúvo(a)"
+    }
+  ],
+  "states": [
+    {
+      "label": "Estado",
+      "value": "",
+      "disabled": true
+    },
+    {
+      "label": "Acre",
+      "value": "AC"
+    },
+    {
+      "label": "Alagoas",
+      "value": "AL"
+    },
+    {
+      "label": "Amapá",
+      "value": "AP"
+    },
+    {
+      "label": "Amazonas",
+      "value": "AM"
+    },
+    {
+      "label": "Bahia",
+      "value": "BA"
+    },
+    {
+      "label": "Ceará",
+      "value": "CE"
+    },
+    {
+      "label": "Distrito Federal",
+      "value": "DF"
+    },
+    {
+      "label": "Espírito Santo",
+      "value": "ES"
+    },
+    {
+      "label": "Goiás",
+      "value": "GO"
+    },
+    {
+      "label": "Maranhão",
+      "value": "MA"
+    },
+    {
+      "label": "Mato Grosso",
+      "value": "MT"
+    },
+    {
+      "label": "Mato Grosso do Sul",
+      "value": "MS"
+    },
+    {
+      "label": "Minas Gerais",
+      "value": "MG"
+    },
+    {
+      "label": "Pará",
+      "value": "PA"
+    },
+    {
+      "label": "Paraíba",
+      "value": "PB"
+    },
+    {
+      "label": "Paraná",
+      "value": "PR"
+    },
+    {
+      "label": "Pernambuco",
+      "value": "PE"
+    },
+    {
+      "label": "Piauí",
+      "value": "PI"
+    },
+    {
+      "label": "Rio de Janeiro",
+      "value": "RJ"
+    },
+    {
+      "label": "Rio Grande do Norte",
+      "value": "RN"
+    },
+    {
+      "label": "Rio Grande do Sul",
+      "value": "RS"
+    },
+    {
+      "label": "Rondônia",
+      "value": "RO"
+    },
+    {
+      "label": "Roraima",
+      "value": "RR"
+    },
+    {
+      "label": "Santa Catarina",
+      "value": "SC"
+    },
+    {
+      "label": "São Paulo",
+      "value": "SP"
+    },
+    {
+      "label": "Sergipe",
+      "value": "SE"
+    },
+    {
+      "label": "Tocantins",
+      "value": "TO"
+    }
+  ]
+}

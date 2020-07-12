@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  calcard-app:
+    hostname: localhost
+    image: 'calcard-app'
+    container_name: 'calcard-app'
+    build: '../calcard-app'
+    ports:
+      - '4200:80'
