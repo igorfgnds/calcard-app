@@ -1,0 +1,66 @@
+// Navbar
+
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+  .container {
+    max-width: 800px;
+  }
+}
+
+.navbar-brand {
+  font-weight: 900;
+  transition: 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  span {
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+}
+
+.user-profile {
+  height: 40px;
+  padding: 5px 5px 5px 15px;
+  color: $white;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: 0.2s;
+
+  &:hover {
+    color: $primary;
+    background-color: $white;
+
+    .user-profile-circle {
+      border-color: transparent;
+      background-color: $primary;
+    }
+  }
+
+  &-name {
+    font-size: 0.875rem;
+    line-height: 30px;
+    
+    &:after {
+      content: "";
+      display: inline-block;
+      margin-left: 0.255em;
+      vertical-align: middle;
+      border-bottom: 0;
+      border-top: 0.3em solid;
+      border-right: 0.2em solid transparent;
+      border-left: 0.2em solid transparent;
+    }
+  }
+
+  &-circle {
+    width: 30px;
+    height: 30px;
+    background-color: $white;
+    border-radius: 100%;
+    transition: 0.2s;
+  }
+}

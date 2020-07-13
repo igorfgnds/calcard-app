@@ -1,0 +1,46 @@
+// Forms
+
+input[type="search"].form-control {
+  padding-left: 50px;
+  border-color: transparent !important;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwKSI+CjxwYXRoIGQ9Ik0xNy43ODAxIDE2LjcxOThMMTIuNjYxNCAxMS42MDExQzEzLjY1MjkgMTAuMzc2MyAxNC4yNDk4IDguODIwMSAxNC4yNDk4IDcuMTI1MTJDMTQuMjQ5OCAzLjE5NjY2IDExLjA1MzQgMC4wMDAxODMxMDUgNy4xMjQ5MSAwLjAwMDE4MzEwNUMzLjE5NjQ1IDAuMDAwMTgzMTA1IDAgMy4xOTY2MyAwIDcuMTI1MDlDMCAxMS4wNTM2IDMuMTk2NDggMTQuMjUgNy4xMjQ5NCAxNC4yNUM4LjgxOTkxIDE0LjI1IDEwLjM3NjIgMTMuNjUzMSAxMS42MDA5IDEyLjY2MTVMMTYuNzE5NiAxNy43ODAyQzE2Ljg2NTggMTcuOTI2NSAxNy4wNTc4IDE4IDE3LjI0OTggMThDMTcuNDQxOSAxOCAxNy42MzM5IDE3LjkyNjUgMTcuNzgwMSAxNy43ODAyQzE4LjA3MzMgMTcuNDg3IDE4LjA3MzMgMTcuMDEzIDE3Ljc4MDEgMTYuNzE5OFpNNy4xMjQ5NCAxMi43NUM0LjAyMjk2IDEyLjc1IDEuNSAxMC4yMjcxIDEuNSA3LjEyNTA5QzEuNSA0LjAyMzExIDQuMDIyOTYgMS41MDAxNSA3LjEyNDk0IDEuNTAwMTVDMTAuMjI2OSAxLjUwMDE1IDEyLjc0OTkgNC4wMjMxMSAxMi43NDk5IDcuMTI1MDlDMTIuNzQ5OSAxMC4yMjcxIDEwLjIyNjkgMTIuNzUgNy4xMjQ5NCAxMi43NVoiIGZpbGw9IiNDMUMxQzMiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMCI+CjxyZWN0IHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K);
+  background-repeat: no-repeat;
+  background-position: 20px center;
+
+  &::placeholder {
+    color: #C1C1C3;
+    opacity: 1;
+  }
+  
+  &:-ms-input-placeholder {
+    color: #C1C1C3;
+  }
+  
+  &::-ms-input-placeholder {
+    color: #C1C1C3;
+  }
+}
+
+select.form-control {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDE0IDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik03IDlMMC45Mzc4MjMgLTEuMTQxOTNlLTA2TDEzLjA2MjIgLTguMTk4N2UtMDhMNyA5WiIgZmlsbD0iI0Q1REJERiIvPgo8L3N2Zz4K);
+}
+
+// Search Customer Form
+.search-customer-form {
+  max-width: 800px;
+}
+
+// Add Customer Form
+.add-customer-form {
+  max-width: 600px;
+}
+
+// Login Form
+.login-form {
+  max-width: 300px;
+}
