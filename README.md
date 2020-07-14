@@ -1,27 +1,51 @@
-# CalcardApp
+# CALCARD: Technical Evaluation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
+Projeto desenvolvido para avaliação técnica referente a vaga de Desenvolvedor Front-end na CALCARD.
 
-## Development server
+## Tecnologias
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Angular 10.0.2
+- Bootstrap 4.5.0
+- JSON Server (REST API)
+- Docker
 
-## Code scaffolding
+## Layout
+Foi utilizado o Figma na criação do layout e no protótipo da aplicação, facilitando assim o preview das features e fluxos do sistema.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://www.figma.com/file/RMXXkdHcgVPYcCi3vpyjEG/Calcard-Technical-Evaluation-UI?node-id=0%3A1
+
+## Dev
+
+Clonar este repositório:
+```sh 
+git clone https://github.com/igorfgnds/calcard-app.git
+```
+
+Instalar as dependências do projeto:
+```sh 
+npm install
+```
+
+Executar API REST com JSON Server para simular o back-end:
+```sh 
+npm run api
+```
+
+Executar aplicação:
+```sh 
+ng serve
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Executar o build da aplicação:
+```sh 
+ng build --prod
+```
 
-## Running unit tests
+## Docker
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Executar projeto com Docker:
+```sh 
+docker-compose -f docker-compose.yml up -d --force-recreate --build
+```
