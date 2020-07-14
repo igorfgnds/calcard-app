@@ -1,7 +1,6 @@
-# CALCARD: Technical Evaluation
+# 💳 CALCARD: Technical Evaluation
 
 Projeto desenvolvido para avaliação técnica referente a vaga de Desenvolvedor Front-end na CALCARD.
-
 
 ## Tecnologias
 
@@ -9,7 +8,6 @@ Projeto desenvolvido para avaliação técnica referente a vaga de Desenvolvedor
 - Bootstrap 4.5.0
 - JSON Server (REST API)
 - Docker
-
 
 ## Layout
 Foi utilizado o Figma na criação do layout e o protótipo da aplicação.
@@ -24,12 +22,10 @@ Clonar este repositório:
 git clone https://github.com/igorfgnds/calcard-app.git
 ```
 
-
 Instalar as dependências do projeto:
 ```sh 
 npm install
 ```
-
 
 Executar API com JSON Server para simular o back-end:
 ```sh 
@@ -37,11 +33,11 @@ npm run api
 ```
 Documentação disponível em: http://localhost:3000
 
-
 Executar aplicação em modo de desenvolvimento:
 ```sh 
 ng serve
 ```
+Acesse a aplicação em: http://localhost:4200/
 
 ### Build
 
@@ -50,17 +46,13 @@ Executar o build da aplicação:
 ng build --prod
 ```
 
-
-## Docker
+### Docker
 
 Executar projeto com Docker:
 ```sh 
 docker-compose -f docker-compose.yml up -d --force-recreate --build
 ```
-
-
-Acesse a aplicação em ambiente local pelo endereço: http://localhost:4200/
-
+Acesse a aplicação em: http://localhost:4200/
 
 ## Observações
 
